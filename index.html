@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Disclaimer:</b> Za ispis tablice je potreban: <b>'Live Server' extension</b> za visual studio code</p>
+    <div id='content'>
+        <table id='Dogs' cellpadding='10px' style="text-align:left;">
+            <thead>
+                <tr>
+                    <th>Vlasnik</th>
+                    <th>Ime_Psa</th>
+                    <th>Vrsta</th>
+                    <th>Starost</th>
+                    <th>Spol</th>
+                    <th>Cijena</th>
+                    <th>Dan_Kupnje</th>
+                    <th>Dan_Smrti</th>
+                    <th>Opis</th>
+                </tr>                
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let xmlContent = '';
+        let tableDogs = document.getElementById('Dogs');
+        fetch('popis.xml').then((response)=> {
+            response.text().then((xml)=>{
+                xmlContent = xml;
+
+                let parser = new DOMParser();
+                let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+                let psi = xmlDOM.querySelectorAll('pas');
+
+                psi.forEach(pasXmlNode => {
+
+                    let row = document.createElement('tr');
+
+                    //vlasnik
+                    let td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[0].innerHTML;
+                    row.appendChild(td);
+
+                    //ime psa
+                    td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[1].innerHTML;
+                    row.appendChild(td);
+
+                    //vrsta
+                    td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[2].innerHTML;
+                    row.appendChild(td);  
+
+                    //starost
+                    td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[3].innerHTML;
+                    row.appendChild(td);
+
+                    //spol
+                    td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[4].innerHTML;
+                    row.appendChild(td);
+
+                    //cijena
+                    td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[5].innerHTML;
+                    row.appendChild(td);
+
+                    //dan_kupnje
+                    td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[6].innerHTML;
+                    row.appendChild(td);
+
+                    //dan_smrti
+                    td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[7].innerHTML;
+                    row.appendChild(td);
+
+                     //opis
+                    td = document.createElement('td');
+                    td.innerText = pasXmlNode.children[8].innerHTML;
+                    row.appendChild(td);
+
+                    tableDogs.children[1].appendChild(row);
+                });
+                
+            });
+        });    
+    </script>
+</body>
+</html>

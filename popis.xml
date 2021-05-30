@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<popis_pasa>
+   <pas id="pas1">
+      <vlasnik>Ivana Punić</vlasnik>
+      <ime>Lar</ime>
+      <vrsta>Francuski Bulldog</vrsta>
+      <starost>5 godina</starost>
+      <spol>Muško</spol>
+      <cijena>Udomljen</cijena>
+      <dan_kupnje>2000-03-01</dan_kupnje>
+      <umro id='null'></umro>
+      <opis>Voli jesti puno mesa</opis>
+   </pas>
+
+    <pas id="pas2">
+      <vlasnik>Ivan Zujić</vlasnik>
+      <ime>Lucky</ime>
+      <vrsta>Dobermann</vrsta>
+      <starost>2 godine</starost>
+      <spol>Muško</spol>
+      <cijena>500 $</cijena>
+      <dan_kupnje>1994-03-04</dan_kupnje>
+      <umro id='null'></umro>
+      <opis>Voli spavati</opis>
+   </pas>
+
+   <pas id="pas3">
+      <vlasnik>Lorena Petrović</vlasnik>
+      <ime>Lucy</ime>
+      <vrsta>Rottweiler</vrsta>
+      <starost>12 godina</starost>
+      <spol>Žensko</spol>
+      <cijena>760 $</cijena>
+      <dan_kupnje>1999-03-14</dan_kupnje>
+      <umro>2011-04-25</umro>
+      <opis>Zaigrana</opis>
+   </pas>
+
+   <pas id="pas4">
+      <vlasnik>Jelena Vujnović</vlasnik>
+      <ime>Uška</ime>
+      <vrsta>German Shepherd</vrsta>
+      <starost>5 mjeseci</starost>
+      <spol>Žensko</spol>
+      <cijena>Udomljen</cijena>
+      <dan_kupnje>2014-06-25</dan_kupnje>
+      <umro id='null'></umro>
+      <opis>Plašljiva, umorna i poslušna</opis>
+   </pas>
+
+   <pas id="pas5">
+      <vlasnik>Maja Glava</vlasnik>
+      <ime>Jackie</ime>
+      <vrsta>Chihuahua</vrsta>
+      <starost>11 mjeseci</starost>
+      <spol>Muško</spol>
+      <cijena>Udomljen</cijena>
+      <dan_kupnje>2012-02-25</dan_kupnje>
+      <umro id='null'></umro>
+      <opis>Zaigran, umoran i poslušan</opis>
+   </pas>
+
+   <pas id="pas6">
+      <vlasnik>Mrs.Biljka</vlasnik>
+      <ime>Oscar</ime>
+      <vrsta>Shih Tzu</vrsta>
+      <starost>15 godina</starost>
+      <spol>Muško</spol>
+      <cijena>Udomljen</cijena>
+      <dan_kupnje>2012-02-25</dan_kupnje>
+      <umro>2027-04-26</umro>
+      <opis>Poslušan, vjeran i pametan</opis>
+   </pas>
+
+   <pas id="pas7">
+      <vlasnik>Ivon Kujić</vlasnik>
+      <ime>Itka</ime>
+      <vrsta>Rottweiler</vrsta>
+      <starost>5 godina</starost>
+      <spol>Žensko</spol>
+      <cijena>532 $</cijena>
+      <dan_kupnje>1994-03-14</dan_kupnje>
+      <umro id="null"></umro>
+      <opis>Opasna, agresivna</opis>
+   </pas>
+
+   <pas id="pas8">
+      <vlasnik>Inko Šmit</vlasnik>
+      <ime>Micko</ime>
+      <vrsta>German Shepherd</vrsta>
+      <starost>4 godine</starost>
+      <spol>Žensko</spol>
+      <cijena>450 $</cijena>
+      <dan_kupnje>2013-07-23</dan_kupnje>
+      <umro id='null'></umro>
+      <opis>U pubertetu</opis>
+   </pas>
+
+   <pas id="pas9">
+      <vlasnik>Dinko Kejić</vlasnik>
+      <ime>Đetko</ime>
+      <vrsta>Greyhound</vrsta>
+      <starost>7 mjeseci</starost>
+      <spol>Muško</spol>
+      <cijena>Udomljen</cijena>
+      <dan_kupnje>2011-04-14</dan_kupnje>
+      <umro id='null'></umro>
+      <opis>Zaigran, voli jesti travu i meso</opis>
+   </pas>
+
+   <pas id="pas10">
+      <vlasnik>Mr. Kujić</vlasnik>
+      <ime>Mitko</ime>
+      <vrsta>Maltese</vrsta>
+      <starost>12 godina</starost>
+      <spol>Muško</spol>
+      <cijena>400 $</cijena>
+      <dan_kupnje>2011-04-19</dan_kupnje>
+      <umro>2023-04-24</umro>
+      <opis>Poslušan, vjeran i pametan. Branio je vjerno svoj dom</opis>
+   </pas>
+
+      <pas id="pas11">
+      <vlasnik>Mr. Kitić</vlasnik>
+      <ime>Chucky</ime>
+      <vrsta>Maltese</vrsta>
+      <starost>11 godina</starost>
+      <spol>Muško</spol>
+      <cijena>420 $</cijena>
+      <dan_kupnje>2011-04-19</dan_kupnje>
+      <umro>2023-04-24</umro>
+      <opis>Poslušan i vjeran. Pokupio ga kamion. :( </opis>
+   </pas>
+
+      <pas id="pas12">
+      <vlasnik>Dario Žigić</vlasnik>
+      <ime>Litko</ime>
+      <vrsta>Mješanac</vrsta>
+      <starost>5 godina</starost>
+      <spol>Muško</spol>
+      <cijena>Udomljen</cijena>
+      <dan_kupnje>2009-11-05</dan_kupnje>
+      <umro id="null"></umro>
+      <opis>Zaigran i voli jesti mrkve. Grize zločeste ljude</opis>
+   </pas>
+<popis_pasa>
