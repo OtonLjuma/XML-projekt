@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,17 @@
     <link rel="stylesheet" href="izgled.css">
     <title>XML projekt</title>
 </head>
+
 <body>
-    <div class="header">
-        <header>
-            <p><b>Disclaimer:</b> Za ispis tablice je potreban: <b>'Live Server' extension</b> za visual studio code</p>
-        </header>
-    </div>
-    
+    <header>
+        <b>Disclaimer:</b> Za ispis tablice je potreban: <b>'Live Server' extension</b> za visual studio code
+    </header>
+
     <div id='content'>
-        <h1><img src="logo.png" class='center'></h1>
-        <table id='Dogs' cellpadding='10px' style="text-align:left;">
+        <h1><img src="logo.jpg" class='image'></h1>
+        <table id='Dogs' cellpadding='10px'>
             <thead>
-                <tr>
+                <tr class='headings'>
                     <th>Vlasnik</th>
                     <th>Ime_Psa</th>
                     <th>Vrsta</th>
@@ -28,7 +28,7 @@
                     <th>Dan_Kupnje</th>
                     <th>Dan_Smrti</th>
                     <th>Opis</th>
-                </tr>                
+                </tr>
             </thead>
             <tbody>
 
@@ -39,8 +39,8 @@
     <script type="text/javascript">
         let xmlContent = '';
         let tableDogs = document.getElementById('Dogs');
-        fetch('popis.xml').then((response)=> {
-            response.text().then((xml)=>{
+        fetch('popis.xml').then((response) => {
+            response.text().then((xml) => {
                 xmlContent = xml;
 
                 let parser = new DOMParser();
@@ -64,7 +64,7 @@
                     //vrsta
                     td = document.createElement('td');
                     td.innerText = pasXmlNode.children[2].innerHTML;
-                    row.appendChild(td);  
+                    row.appendChild(td);
 
                     //starost
                     td = document.createElement('td');
@@ -91,19 +91,20 @@
                     td.innerText = pasXmlNode.children[7].innerHTML;
                     row.appendChild(td);
 
-                     //opis
+                    //opis
                     td = document.createElement('td');
                     td.innerText = pasXmlNode.children[8].innerHTML;
                     row.appendChild(td);
 
                     tableDogs.children[1].appendChild(row);
                 });
-                
+
             });
-        });    
+        });
     </script>
     <footer>
         <p>Stranicu napravio: @Oton Ljuma</p>
     </footer>
 </body>
+
 </html>
